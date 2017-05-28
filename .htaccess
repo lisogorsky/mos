@@ -1,0 +1,9 @@
+FCGIWrapper /home/httpd/fcgi-bin/a42962_mos/php .html
+FCGIWrapper /home/httpd/fcgi-bin/a42962_mos/php .htm
+AddHandler fcgid-script .php .html .htm
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html
+RewriteRule ^index\.html$ http://mosocenka.org/ [R=301,L]
