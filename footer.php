@@ -1,3 +1,5 @@
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
 <footer>  
 	<p>Компания "Московская оценка"</p>
 	<p class="small"><?= date("Y") ?> &copy; Все права защищены</p>

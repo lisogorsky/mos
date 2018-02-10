@@ -6,13 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Московская Оценка</title>
 		<link rel="icon" href="favicon.ico" />
-		<!--<link href='https://fonts.googleapis.com/css?family=EB+Garamond&subset=latin,cyrillic' rel='stylesheet' type='text/css'>-->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<link href="css/grayscale.css" rel="stylesheet">
-		<!--<link href="/style.php/screen.scss" rel="stylesheet">-->
 		<link href="css/animate.css" rel="stylesheet">
-		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 		<script src="js/wow.min.js"></script>
 		<script>
 			wow = new WOW ({
