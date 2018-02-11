@@ -2,8 +2,30 @@ FCGIWrapper /home/httpd/fcgi-bin/a42962_mos/php .html
 FCGIWrapper /home/httpd/fcgi-bin/a42962_mos/php .htm
 AddHandler fcgid-script .php .html .htm
 
+#RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^([^\.]+)$ $1.html [NC,L]
+#RewriteCond %{THE_REQUEST} ^.*/index.html
+#RewriteRule ^(.*)index.html$ http://%{HTTP_HOST}/$1 [R=301,L]
+
+#<ifModule mod_deflate.c>
+#AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript
+#</ifModule>
+
+#<FilesMatch ".(flv|gif|jpg|jpeg|png|ico|swf|js|css|pdf)$">
+#  Header set Cache-Control "max-age=10000"
+#</FilesMatch>
+
+#ErrorDocument 404 http://mosocenka.org/404.php
+#RewriteCond %{REQUEST_URI} ^/error.*
+#RewriteRule . - [R=404,L,NC]
+
+php_flag display_errors on
 RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.*)$ $1.html
-RewriteRule ^index\.html$ http://mosocenka.org/ [R=301,L]
+RewriteCond %{REQUEST_URI} !^/page.php
+RewriteCond %{REQUEST_URI} (/|\.php|\.html|\.htm|\.feed|\.pdf|\.raw|/[^.]*)$  [NC]
+RewriteRule (.*) /page.php
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization},L]

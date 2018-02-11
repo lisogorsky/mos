@@ -27,7 +27,7 @@ body {
 	list-style: none; 
 }
 .section2 {
-    padding-bottom: 30px;
+	padding-bottom: 30px;
 }
 .section-table > .section-row > li {
 	display: table-cell;
@@ -47,9 +47,10 @@ body {
 	top: 60%;
 }
 .navbar-default .navbar-nav > li > a {
-    border: 1px dashed black;
-    color: #000;
-    line-height: 14px;
+	border: 1px solid #fff;
+	color: #fff;
+	line-height: 14px;
+	background: rgba(255,255,255,.1);
 }
 .navbar-default .navbar-nav > li > a:hover {
 	background: #eee;
@@ -58,36 +59,34 @@ ul[class="nav navbar-nav center"] {
 	height: 60px; 
 	padding-top: 18px;
 }
-nav[class="navbar navbar-default"] {
-	height: 90px;
-}
 .menu-top {
-    margin-bottom: -20px;
+	z-index: 10;
+	position: relative;
 }
 header .col-xs-12 {
 	padding: 0;
 }
 .tel {
-    font-family: 'EB Garamond', serif;
-    color: #000;
-    font-size: 190%;
-    position: relative;
-    top: 5px;
-    line-height: 1;
+	font-family: 'EB Garamond', serif;
+	color: #000;
+	font-size: 190%;
+	position: relative;
+	top: 5px;
+	line-height: 1;
 }
 .textCompanyWrap {
-    width: 100%;
-    position: absolute;
-    top: 40%;
-    left: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 40%;
+	left: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: center;
 }
 .textCompany {
-    display: inline-block;
-    white-space: normal;
-    vertical-align: middle;
+	display: inline-block;
+	white-space: normal;
+	vertical-align: middle;
 	font-family: 'EB Garamond', serif;
 	color: #fff;
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.9);
@@ -159,7 +158,7 @@ footer {
 	font-size: 100%;
 }
 footer p {
-    margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 p.small {
 	font-size: 70%;
@@ -182,18 +181,18 @@ p.small {
 
 
 a#formPopUp {
-    cursor: pointer;
-    border: none;
+	cursor: pointer;
+	border: none;
 	border-bottom: 1px dashed;
-    line-height: 1;
-    margin-top: 0;
-    color: #777;
-    font-weight: 300;
-    letter-spacing: .5px;
-    font-size: 15px;
-    display: inline-block;
-    float: right;
-    padding: 0;
+	line-height: 1;
+	margin-top: 0;
+	color: #777;
+	font-weight: 300;
+	letter-spacing: .5px;
+	font-size: 15px;
+	display: inline-block;
+	float: right;
+	padding: 0;
 }
 a#formPopUp:hover {
 	color: #0880b0;
@@ -215,21 +214,21 @@ a#formPopUp:hover {
 	display: block;
 }
 #thanks > div, #error > div {
-    width: 200px;
-    height: 105px;
-    margin: auto;
-    text-align: center;
-    background: #ccc;
-    z-index: 10001;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    padding: 16px;
-    border-radius: 5px;
-    box-shadow: 0 0 15px rgba(255,255,255, .5);
-    line-height: 1.2;
+	width: 200px;
+	height: 105px;
+	margin: auto;
+	text-align: center;
+	background: #ccc;
+	z-index: 10001;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding: 16px;
+	border-radius: 5px;
+	box-shadow: 0 0 15px rgba(255,255,255, .5);
+	line-height: 1.2;
 	font-size: 14px;
 }
 #window {
@@ -316,15 +315,15 @@ a#formPopUp:hover {
 	padding: 15px 0;
 }
 .tab-menu .row > div {
-    display: table;
-    padding: 10px;
+	display: table;
+	padding: 10px;
 }
 .table-cell {
 	display: table-cell;
-    vertical-align: middle;
-    text-align: center;
+	vertical-align: middle;
+	text-align: center;
 	padding: 2px;
-    border: 1px solid;
+	border: 1px solid;
 	cursor: pointer;
 }
 .tab-content {
@@ -335,37 +334,37 @@ a#formPopUp:hover {
 	display: block;
 }
 .tab-menu a {
-    color: #fff;
-    text-decoration: none;
+	color: #fff;
+	text-decoration: none;
 	display: block;
-    padding: 10px;
+	padding: 10px;
 }
 .block-icons {
 	padding: 30px 40px 0;
 	background: #F0F4F5;
 }
 .block-icons h3 {
-    margin-bottom: 30px;
-    margin-top: 0;
+	margin-bottom: 30px;
+	margin-top: 0;
 }
 .block-icon p {
-    line-height: 1.1;
-    font-size: 15px;
-    width: 80%;
-    margin: auto;
-    padding-top: 10px;
-    padding-bottom: 30px;
+	line-height: 1.1;
+	font-size: 15px;
+	width: 80%;
+	margin: auto;
+	padding-top: 10px;
+	padding-bottom: 30px;
 }
 .partners {
 	height: 150px;
 	margin-bottom: 20px;
 }
 .partners > div {
-    padding: 20px;
-    box-shadow: 1px 1px 5px #ccc;
-    height: 100%;
-    display: table;
-    width: 100%;
+	padding: 20px;
+	box-shadow: 1px 1px 5px #ccc;
+	height: 100%;
+	display: table;
+	width: 100%;
 	transition: box-shadow .5s;
 }
 .partners > div:hover {
@@ -377,16 +376,16 @@ a#formPopUp:hover {
 	max-height: 149px;
 }
 .partners > div > div {
-    display: table-cell;
-    vertical-align: middle;
+	display: table-cell;
+	vertical-align: middle;
 	text-align: center;
 }
 .partners > div > div img {
-    max-height: 109px;
+	max-height: 109px;
 	margin: auto;
 }
 .block-icon > div {
-    text-align: center;
+	text-align: center;
 }
 
 
@@ -452,3 +451,11 @@ a#formPopUp:hover {
 		height: 130px;
 	}
 }												
+
+.navbar-default {
+    background-color: #24557f;
+    border-color: black;
+    margin-bottom: 0;
+    border-radius: 0;
+    padding-bottom: 12px;
+}
