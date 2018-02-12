@@ -6,10 +6,6 @@
 	<div id="scrollup"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></div>
 </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/jquery.maskedinput.js"></script>
-<script src="js/validator.js"></script>
-
 <div id="paranja" style="display: none;">
 	<div id="window">
 		<form name="feedback" action="/sendmail.php" method="post"> 
@@ -40,17 +36,16 @@
 	</div>
 </div>
 
-<script>
-	$('#formPopUp').click(function() { $('#paranja, #window').slideDown(555); })
-	$('form[name="feedback"]').validator();	
-	$('.form_tel').mask("+7 (999) 999-99-99");
-</script>
-
 <div id="thanks"><div>Спасибо за Ваше сообщение!<br>Мы свяжемся с Вами в самое ближайшее время!<span class="glyphicon glyphicon-remove" onclick="jQuery('#thanks').fadeOut(1000); window.location='/'"></span></div></div>
 
 <div id="error"><div>Сожелеем, но Вы не прошли каптчу!<br>Пожалуйста, вернитесь к заполнению формы!<span class="glyphicon glyphicon-remove" onclick="jQuery('#error').fadeOut(1000); window.location='/'"></span></div></div>
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
+<script src="js/validator.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/script.js"></script>
+
 </body>
 </html>

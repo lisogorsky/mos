@@ -14,7 +14,7 @@ window.onload = function() { // после загрузки страницы
 	window.onscroll = function () { // при скролле показывать и прятать блок
 		if ( window.pageYOffset > 0 ) {
 			scrollUp.style.display = 'block';
-			} else {
+		} else {
 			scrollUp.style.display = 'none';
 		}
 	};
@@ -43,14 +43,8 @@ $(document).ready(function() {
 		$('section#'+tab).addClass('active');
 	})
 	
-	setTimeout(function() { 
-		$('.headerIMG > img').fadeOut(1000);
-	},3500);
-	setTimeout(function() { 
-		$('#sliderTwo').prependTo($('.headerIMG')).addClass('img-responsive hidden-xs');
-	},1000);
-	setTimeout(function() { 
-		$('#sliderTwo').fadeIn(1000);
-	},3500);
+	$('#formPopUp').click(function() { $('#paranja, #window').slideDown(555); })
+	$('form[name="feedback"]').validator();	
+	$('.form_tel').mask("+7 (999) 999-99-99");
 	
 })

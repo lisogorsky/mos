@@ -67,8 +67,6 @@
 								<? foreach($menu as $menu_item): ?>
 									<li><a href="<?=$menu_item['menu_link']?>"><?=$menu_item['menu_name']?></a></li>
 								<? endforeach; ?>
-								<!-- <li><a href="/forensic-examination">СУДЕБНАЯ ЭЕСПЕРТИЗА</a></li>
-									<li><a href="/our-contacts">КОНТАКТЫ</a></li> -->
 								<!-- <li><p class="tel visible-md visible-lg">+7-926-953-51-64</p><a id="formPopUp">заказать звонок</a>
 								</li> -->
 							</ul>
